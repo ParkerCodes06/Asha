@@ -114,7 +114,7 @@ export default function Team({ members, title, highlight }: TeamProps) {
             fontSize: 18,
             color: '#2D3047',
           }}>
-            With {members.length} Qualified Teacher? <a href="#" style={{ color: '#C8962E', textDecoration: 'underline' }}>View All Here&gt;</a>
+            With {members.length} Qualified Teachers <a href="#" style={{ color: '#C8962E', textDecoration: 'underline' }}>View All Here&gt;</a>
           </p>
         </div>
       </div>

@@ -43,7 +43,7 @@ function TeamCard({ member }: { member: TeamMember }) {
       }}>
         <h3 style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 28,
+          fontSize: 16,
           color: '#2D3047',
           marginBottom: 5,
         }}>
@@ -51,7 +51,7 @@ function TeamCard({ member }: { member: TeamMember }) {
         </h3>
         <p style={{
           fontFamily: "'Montserrat', sans-serif",
-          fontSize: 24,
+          fontSize: 12,
           color: '#696969',
           marginBottom: 3,
         }}>
@@ -59,7 +59,7 @@ function TeamCard({ member }: { member: TeamMember }) {
         </p>
         <p style={{
           fontFamily: "'Montserrat', sans-serif",
-          fontSize: 23,
+          fontSize: 11,
           color: '#C8962E',
         }}>
           {member.email}
@@ -76,7 +76,7 @@ export default function Team({ members, title, highlight }: TeamProps) {
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <h2 style={{
             fontFamily: "'Gloria Hallelujah', cursive",
-            fontSize: 30,
+            fontSize: 18,
             color: '#C8962E',
             marginBottom: 5,
           }}>
@@ -84,7 +84,7 @@ export default function Team({ members, title, highlight }: TeamProps) {
           </h2>
           <h2 style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 57,
+            fontSize: 45,
             color: '#2D3047',
             lineHeight: 1.2,
           }}>
@@ -111,7 +111,7 @@ export default function Team({ members, title, highlight }: TeamProps) {
         <div style={{ textAlign: 'center', marginTop: 30 }}>
           <p style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 30,
+            fontSize: 18,
             color: '#2D3047',
           }}>
             With {members.length} Qualified Teacher? <a href="#" style={{ color: '#C8962E', textDecoration: 'underline' }}>View All Here&gt;</a>

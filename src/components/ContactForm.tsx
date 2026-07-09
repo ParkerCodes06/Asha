@@ -40,7 +40,7 @@ export default function ContactForm() {
     padding: '14px 0',
     border: 'none',
     background: 'transparent',
-    fontSize: 26,
+    fontSize: 14,
     fontFamily: "'Montserrat', sans-serif",
     outline: 'none',
     color: '#2D3047',
@@ -63,7 +63,7 @@ export default function ContactForm() {
     >
       <h3 style={{
         fontFamily: "'Fredoka One', cursive",
-        fontSize: 34,
+        fontSize: 22,
         color: '#2D3047',
         marginBottom: 25,
       }}>
@@ -76,7 +76,7 @@ export default function ContactForm() {
         gap: 15,
       }}>
         <div style={fieldStyle}>
-          <FaUser style={{ color: '#C8962E', fontSize: 22, flexShrink: 0 }} />
+          <FaUser style={{ color: '#C8962E', fontSize: 10, flexShrink: 0 }} />
           <input
             type="text"
             name="name"
@@ -88,7 +88,7 @@ export default function ContactForm() {
           />
         </div>
         <div style={fieldStyle}>
-          <FaEnvelope style={{ color: '#2196F3', fontSize: 22, flexShrink: 0 }} />
+          <FaEnvelope style={{ color: '#2196F3', fontSize: 10, flexShrink: 0 }} />
           <input
             type="email"
             name="email"
@@ -100,7 +100,7 @@ export default function ContactForm() {
           />
         </div>
         <div style={fieldStyle}>
-          <FaPhone style={{ color: '#4CAF50', fontSize: 22, flexShrink: 0 }} />
+          <FaPhone style={{ color: '#4CAF50', fontSize: 10, flexShrink: 0 }} />
           <input
             type="tel"
             name="phone"
@@ -111,7 +111,7 @@ export default function ContactForm() {
           />
         </div>
         <div style={fieldStyle}>
-          <FaTag style={{ color: '#E44993', fontSize: 22, flexShrink: 0 }} />
+          <FaTag style={{ color: '#E44993', fontSize: 10, flexShrink: 0 }} />
           <input
             type="text"
             name="subject"
@@ -129,7 +129,7 @@ export default function ContactForm() {
         alignItems: 'flex-start',
         paddingTop: 10,
       }}>
-        <FaCommentDots style={{ color: '#C8962E', fontSize: 22, flexShrink: 0, marginTop: 10 }} />
+        <FaCommentDots style={{ color: '#C8962E', fontSize: 10, flexShrink: 0, marginTop: 10 }} />
         <textarea
           name="message"
           value={formData.message}
@@ -152,7 +152,7 @@ export default function ContactForm() {
           background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
           color: '#fff',
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 28,
+          fontSize: 16,
           padding: '14px 40px',
           borderRadius: 25,
           border: 'none',

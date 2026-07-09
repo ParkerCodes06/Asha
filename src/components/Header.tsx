@@ -32,7 +32,7 @@ function ScrollToTopButton() {
             background: 'linear-gradient(135deg, #C8962E, #e0b84d)',
             color: '#fff',
             border: 'none',
-            fontSize: 24,
+            fontSize: 12,
             cursor: 'pointer',
             zIndex: 999,
             boxShadow: '0 4px 15px rgba(200,150,46,0.4)',
@@ -90,13 +90,13 @@ export default function Header() {
             <div style={{ lineHeight: 1.1 }}>
               <div style={{
                 fontFamily: "'Fredoka One', cursive",
-                fontSize: 28,
+                fontSize: 16,
                 color: '#2D3047',
                 letterSpacing: 0.5,
               }}>Pulset</div>
               <div style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontSize: 14,
+                fontSize: 2,
                 color: '#C8962E',
                 fontWeight: 600,
                 letterSpacing: 1,
@@ -121,7 +121,7 @@ export default function Header() {
                   to={link.path}
                   style={{
                     fontFamily: "'Montserrat', sans-serif",
-                    fontSize: 30,
+                    fontSize: 18,
                     fontWeight: 500,
                     color: isActive ? '#C8962E' : '#2D3047',
                     textDecoration: 'none',
@@ -173,18 +173,18 @@ export default function Header() {
                 textDecoration: 'none',
                 color: '#2D3047',
                 fontFamily: "'Montserrat', sans-serif",
-                fontSize: 27,
+                fontSize: 15,
                 fontWeight: 700,
               }}
             >
               <FaPhoneVolume className="phone-icon" style={{
                 color: '#C8962E',
-                fontSize: 46,
+                fontSize: 34,
                 transform: 'rotate(340deg)',
               }} />
               <div>
-                <div style={{ fontSize: 27, color: '#C8962E', textTransform: 'uppercase', letterSpacing: 1 }}>Call us Now</div>
-                <div style={{ fontSize: 28, color: '#C8962E', fontWeight: 700 }}>{sitePhoneFull}</div>
+                <div style={{ fontSize: 15, color: '#C8962E', textTransform: 'uppercase', letterSpacing: 1 }}>Call us Now</div>
+                <div style={{ fontSize: 16, color: '#C8962E', fontWeight: 700 }}>{sitePhoneFull}</div>
               </div>
             </a>
           </div>
@@ -198,7 +198,7 @@ export default function Header() {
               background: 'linear-gradient(135deg, #C8962E, #e0b84d)',
               color: '#fff',
               border: 'none',
-              fontSize: 42,
+              fontSize: 30,
               padding: 10,
               cursor: 'pointer',
               borderRadius: 10,
@@ -236,7 +236,7 @@ export default function Header() {
                       onClick={() => setMenuOpen(false)}
                       style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 28,
+                        fontSize: 16,
                         fontWeight: 600,
                         color: location.pathname === link.path ? '#C8962E' : '#2D3047',
                         textDecoration: 'none',
@@ -262,7 +262,7 @@ export default function Header() {
                     color: '#C8962E',
                     fontFamily: "'Montserrat', sans-serif",
                     fontWeight: 700,
-                    fontSize: 28,
+                    fontSize: 16,
                     marginTop: 10,
                     padding: '10px 0',
                     background: 'linear-gradient(135deg, rgba(200,150,46,0.1), rgba(200,150,46,0.05))',

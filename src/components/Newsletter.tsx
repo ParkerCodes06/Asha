@@ -27,13 +27,13 @@ export default function Newsletter() {
             transition={{ duration: 0.6 }}
           >
             <FaSun className="icon-rotate" style={{
-              fontSize: 72,
+              fontSize: 60,
               color: '#FFD166',
               marginBottom: 15,
             }} />
             <h2 style={{
               fontFamily: "'Fredoka One', cursive",
-              fontSize: 47,
+              fontSize: 35,
               color: '#2D3047',
               marginBottom: 10,
             }}>
@@ -41,7 +41,7 @@ export default function Newsletter() {
             </h2>
             <p style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontSize: 28,
+              fontSize: 16,
               color: '#696969',
               lineHeight: 1.6,
             }}>
@@ -66,7 +66,7 @@ export default function Newsletter() {
                   padding: '15px 25px',
                   borderRadius: 25,
                   border: '1px solid #e5e5e5',
-                  fontSize: 28,
+                  fontSize: 16,
                   fontFamily: "'Montserrat', sans-serif",
                   outline: 'none',
                 }}

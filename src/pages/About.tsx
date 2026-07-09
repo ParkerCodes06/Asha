@@ -48,7 +48,7 @@ export default function About() {
             >
               <h2 style={{
                 fontFamily: "'Gloria Hallelujah', cursive",
-                fontSize: 30,
+                fontSize: 18,
                 color: '#C8962E',
                 marginBottom: 5,
               }}>
@@ -56,7 +56,7 @@ export default function About() {
               </h2>
               <h2 style={{
                 fontFamily: "'Fredoka One', cursive",
-                fontSize: 47,
+                fontSize: 35,
                 color: '#2D3047',
                 marginBottom: 20,
               }}>
@@ -64,7 +64,7 @@ export default function About() {
               </h2>
               <p style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontSize: 27,
+                fontSize: 15,
                 color: '#696969',
                 marginBottom: 15,
                 lineHeight: 1.8,
@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <p style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontSize: 27,
+                fontSize: 15,
                 color: '#696969',
                 marginBottom: 25,
                 lineHeight: 1.8,
@@ -95,11 +95,11 @@ export default function About() {
                     alignItems: 'center',
                     gap: 10,
                     fontFamily: "'Montserrat', sans-serif",
-                    fontSize: 26,
+                    fontSize: 14,
                     fontWeight: 500,
                     color: '#2D3047',
                   }}>
-                    <FaCheckCircle style={{ color: '#C8962E', fontSize: 26 }} /> {f}
+                    <FaCheckCircle style={{ color: '#C8962E', fontSize: 14 }} /> {f}
                   </li>
                 ))}
               </ul>

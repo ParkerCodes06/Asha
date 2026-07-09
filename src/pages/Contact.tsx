@@ -43,7 +43,7 @@ export default function Contact() {
         }}>
           <h2 style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 40,
+            fontSize: 28,
             color: '#fff',
             marginBottom: 10,
           }}>
@@ -51,7 +51,7 @@ export default function Contact() {
           </h2>
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 26,
+            fontSize: 14,
             color: 'rgba(255,255,255,0.8)',
             marginBottom: 30,
           }}>

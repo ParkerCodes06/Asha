@@ -40,7 +40,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
           color: '#fff',
           padding: '5px 15px',
           borderRadius: 20,
-          fontSize: 24,
+          fontSize: 12,
           fontWeight: 600,
         }}>
           {course.badge}
@@ -49,7 +49,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
       <div style={{ padding: 20 }}>
         <h3 style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 30,
+          fontSize: 18,
           color: '#2D3047',
           marginBottom: 10,
         }}>
@@ -57,7 +57,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
         </h3>
         <p style={{
           fontFamily: "'Montserrat', sans-serif",
-          fontSize: 26,
+          fontSize: 14,
           color: '#696969',
           marginBottom: 15,
           lineHeight: 1.6,
@@ -69,18 +69,18 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
           justifyContent: 'space-between',
           paddingTop: 15,
           borderTop: '1px solid #eee',
-          fontSize: 25,
+          fontSize: 13,
           color: '#696969',
           marginBottom: 15,
         }}>
           <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <FaBook style={{ color: '#C8962E', fontSize: 24 }} /> {course.lessons} Lessons
+            <FaBook style={{ color: '#C8962E', fontSize: 12 }} /> {course.lessons} Lessons
           </span>
           <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <FaUserGraduate style={{ color: '#C8962E', fontSize: 24 }} /> {course.students} Students
+            <FaUserGraduate style={{ color: '#C8962E', fontSize: 12 }} /> {course.students} Students
           </span>
         </div>
-        <p style={{ fontSize: 25, color: '#696969', marginBottom: 15 }}>
+        <p style={{ fontSize: 13, color: '#696969', marginBottom: 15 }}>
           {course.teachers}
         </p>
         <Link
@@ -90,7 +90,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
             display: 'block',
             textAlign: 'center',
             padding: '10px 0',
-            fontSize: 26,
+            fontSize: 14,
             textDecoration: 'none',
           }}
         >
@@ -108,7 +108,7 @@ export default function Courses({ courses, title, highlight, viewAll }: CoursesP
         <div style={{ textAlign: 'center', marginBottom: 50 }}>
           <h2 style={{
             fontFamily: "'Gloria Hallelujah', cursive",
-            fontSize: 30,
+            fontSize: 18,
             color: '#C8962E',
             marginBottom: 5,
           }}>
@@ -116,7 +116,7 @@ export default function Courses({ courses, title, highlight, viewAll }: CoursesP
           </h2>
           <h2 style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 57,
+            fontSize: 45,
             color: '#2D3047',
             lineHeight: 1.2,
           }}>

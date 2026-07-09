@@ -3,10 +3,10 @@ import { FaBroom, FaFutbol, FaPaintBrush, FaBicycle } from 'react-icons/fa';
 import SectionHeader from './SectionHeader';
 
 const activities = [
-  { icon: <FaBroom style={{ fontSize: 36, color: '#4CAF50' }} />, label: 'Cleaning', color: '#e8f5e9', borderColor: '#4CAF50' },
-  { icon: <FaFutbol style={{ fontSize: 36, color: '#2196F3' }} />, label: 'Indoor Play', color: '#e3f2fd', borderColor: '#2196F3' },
-  { icon: <FaPaintBrush style={{ fontSize: 36, color: '#C8962E' }} />, label: 'Art & Craft', color: '#fff8e1', borderColor: '#C8962E' },
-  { icon: <FaBicycle style={{ fontSize: 36, color: '#E44993' }} />, label: 'Outdoor Games', color: '#fce4ec', borderColor: '#E44993' },
+  { icon: <FaBroom style={{ fontSize: 24, color: '#4CAF50' }} />, label: 'Cleaning', color: '#e8f5e9', borderColor: '#4CAF50' },
+  { icon: <FaFutbol style={{ fontSize: 24, color: '#2196F3' }} />, label: 'Indoor Play', color: '#e3f2fd', borderColor: '#2196F3' },
+  { icon: <FaPaintBrush style={{ fontSize: 24, color: '#C8962E' }} />, label: 'Art & Craft', color: '#fff8e1', borderColor: '#C8962E' },
+  { icon: <FaBicycle style={{ fontSize: 24, color: '#E44993' }} />, label: 'Outdoor Games', color: '#fce4ec', borderColor: '#E44993' },
 ];
 
 export default function Activities() {
@@ -63,7 +63,7 @@ export default function Activities() {
               </motion.div>
               <h3 style={{
                 fontFamily: "'Fredoka One', cursive",
-                fontSize: 28,
+                fontSize: 16,
                 color: '#2D3047',
               }}>
                 {a.label}

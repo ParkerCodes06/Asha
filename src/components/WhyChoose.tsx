@@ -3,9 +3,9 @@ import { FaChalkboardTeacher, FaBookReader, FaPaintBrush } from 'react-icons/fa'
 import { whyChooseUs } from '../data/siteData';
 
 const iconMap: Record<string, React.ReactNode> = {
-  teacher: <FaChalkboardTeacher style={{ fontSize: 52, color: '#2D3047' }} />,
-  book: <FaBookReader style={{ fontSize: 52, color: '#2D3047' }} />,
-  art: <FaPaintBrush style={{ fontSize: 52, color: '#2D3047' }} />,
+  teacher: <FaChalkboardTeacher style={{ fontSize: 40, color: '#2D3047' }} />,
+  book: <FaBookReader style={{ fontSize: 40, color: '#2D3047' }} />,
+  art: <FaPaintBrush style={{ fontSize: 40, color: '#2D3047' }} />,
 };
 
 const cardColors = ['#C8962E', '#2196F3', '#4CAF50', '#E44993'];
@@ -30,7 +30,7 @@ export default function WhyChoose() {
             viewport={{ once: true }}
             style={{
               fontFamily: "'Gloria Hallelujah', cursive",
-              fontSize: 30,
+              fontSize: 18,
               color: 'rgba(255,255,255,0.9)',
               marginBottom: 5,
             }}
@@ -44,7 +44,7 @@ export default function WhyChoose() {
             transition={{ delay: 0.1 }}
             style={{
               fontFamily: "'Fredoka One', cursive",
-              fontSize: 57,
+              fontSize: 45,
               color: '#fff',
             }}
           >
@@ -92,7 +92,7 @@ export default function WhyChoose() {
               </motion.div>
               <h3 style={{
                 fontFamily: "'Fredoka One', cursive",
-                fontSize: 30,
+                fontSize: 18,
                 color: '#2D3047',
                 marginBottom: 10,
               }}>
@@ -100,7 +100,7 @@ export default function WhyChoose() {
               </h3>
               <p style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontSize: 26,
+                fontSize: 14,
                 color: '#696969',
                 lineHeight: 1.6,
               }}>

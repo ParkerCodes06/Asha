@@ -11,13 +11,13 @@ export default function CTA() {
     }}>
       <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
         <FaSun className="icon-rotate" style={{
-          fontSize: 72,
+          fontSize: 60,
           color: '#FFD166',
           marginBottom: 20,
         }} />
         <h2 style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 57,
+          fontSize: 45,
           color: '#fff',
           marginBottom: 15,
         }}>
@@ -25,7 +25,7 @@ export default function CTA() {
         </h2>
         <p style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 36,
+          fontSize: 24,
           color: '#fff',
           marginBottom: 5,
         }}>
@@ -33,7 +33,7 @@ export default function CTA() {
         </p>
         <p style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 40,
+          fontSize: 28,
           color: '#fff',
           marginBottom: 25,
           letterSpacing: 1,

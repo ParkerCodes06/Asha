@@ -41,14 +41,14 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
         }}>
           <div style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 34,
+            fontSize: 22,
             lineHeight: 1,
           }}>
             {day}
           </div>
           <div style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 23,
+            fontSize: 11,
             fontWeight: 600,
             textTransform: 'uppercase',
           }}>
@@ -59,7 +59,7 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
       <div style={{ padding: 20 }}>
         <h3 style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 28,
+          fontSize: 16,
           color: '#2D3047',
           marginBottom: 10,
           lineHeight: 1.3,
@@ -68,7 +68,7 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
         </h3>
         <p style={{
           fontFamily: "'Montserrat', sans-serif",
-          fontSize: 25,
+          fontSize: 13,
           color: '#696969',
           marginBottom: 15,
           lineHeight: 1.6,
@@ -79,12 +79,12 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          fontSize: 24,
+          fontSize: 12,
           color: '#696969',
         }}>
           <span>{post.author}</span>
           <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-            <FaCalendarAlt style={{ color: '#C8962E', fontSize: 23 }} /> 1
+            <FaCalendarAlt style={{ color: '#C8962E', fontSize: 11 }} /> 1
           </span>
         </div>
       </div>
@@ -99,7 +99,7 @@ export default function Blog() {
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <h2 style={{
             fontFamily: "'Gloria Hallelujah', cursive",
-            fontSize: 30,
+            fontSize: 18,
             color: '#C8962E',
             marginBottom: 5,
           }}>
@@ -107,7 +107,7 @@ export default function Blog() {
           </h2>
           <h2 style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 57,
+            fontSize: 45,
             color: '#2D3047',
           }}>
             Articles
@@ -125,7 +125,7 @@ export default function Blog() {
         <div style={{ textAlign: 'center', marginTop: 30 }}>
           <h2 style={{
             fontFamily: "'Fredoka One', cursive",
-            fontSize: 30,
+            fontSize: 18,
             color: '#2D3047',
           }}>
             Get into details now? <a href="#" style={{ color: '#C8962E', textDecoration: 'underline' }}>View All Our Posts&gt;</a>

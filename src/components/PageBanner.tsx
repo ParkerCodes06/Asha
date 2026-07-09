@@ -20,7 +20,7 @@ export default function PageBanner({ title, highlight, breadcrumb }: PageBannerP
       >
         <h1 style={{
           fontFamily: "'Fredoka One', cursive",
-          fontSize: 57,
+          fontSize: 45,
           color: '#fff',
           marginBottom: 10,
         }}>
@@ -29,7 +29,7 @@ export default function PageBanner({ title, highlight, breadcrumb }: PageBannerP
         {breadcrumb && (
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 28,
+            fontSize: 16,
             color: 'rgba(255,255,255,0.8)',
           }}>
             {breadcrumb}

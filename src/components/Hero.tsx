@@ -34,19 +34,19 @@ export default function Hero() {
             {/* Floating decorative icons */}
             <FaLeaf className="desktop-only parallax" data-speed="-0.2" style={{
               position: 'absolute', top: -60, right: -235,
-              color: '#4CAF50', fontSize: 72, transform: 'rotate(340deg)',
+              color: '#4CAF50', fontSize: 60, transform: 'rotate(340deg)',
             }} />
             <FaStar className="desktop-only icon-rotate" style={{
               position: 'absolute', top: 0, left: -325,
-              color: '#FFC107', fontSize: 42,
+              color: '#FFC107', fontSize: 30,
             }} />
             <FaDotCircle style={{
               position: 'absolute', bottom: 3, right: 175,
-              color: '#E44993', fontSize: 48,
+              color: '#E44993', fontSize: 36,
             }} />
             <FaPlus className="desktop-only icon-rotate" style={{
               position: 'absolute', bottom: -35, right: -490,
-              color: '#2196F3', fontSize: 42,
+              color: '#2196F3', fontSize: 30,
             }} />
 
             <motion.h2
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               style={{
                 fontFamily: "'Gloria Hallelujah', cursive",
-                fontSize: 30,
+                fontSize: 18,
                 fontWeight: 500,
                 color: '#C8962E',
                 marginBottom: 5,
@@ -69,7 +69,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               style={{
                 fontFamily: "'Fredoka One', cursive",
-                fontSize: 68,
+                fontSize: 56,
                 fontWeight: 500,
                 color: '#C8962E',
                 marginTop: -20,
@@ -84,7 +84,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
               style={{
                 fontFamily: "'Montserrat', sans-serif",
-                fontSize: 30,
+                fontSize: 18,
                 fontWeight: 500,
                 color: '#2D3047',
                 paddingTop: 20,

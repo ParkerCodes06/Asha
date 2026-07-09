@@ -43,7 +43,7 @@ function FloatingWhatsApp() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: 32,
+            fontSize: 20,
             zIndex: 998,
             boxShadow: '0 4px 20px rgba(37,211,102,0.4)',
             cursor: 'pointer',

@@ -25,13 +25,13 @@ export default function Features() {
             />
 
             <FaLightbulb className="desktop-only icon-grow" style={{
-              color: '#cdc7c7', fontSize: 72, position: 'absolute', left: -60, top: 140,
+              color: '#cdc7c7', fontSize: 60, position: 'absolute', left: -60, top: 140,
               opacity: 0.6,
             }} />
 
             <p style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontSize: 26,
+              fontSize: 14,
               fontWeight: 500,
               color: '#696969',
               paddingTop: 15,
@@ -48,7 +48,7 @@ export default function Features() {
                 {features.slice(0, 2).map((f) => (
                   <li key={f.title} style={{
                     fontFamily: "'Fredoka One', cursive",
-                    fontSize: 26,
+                    fontSize: 14,
                     color: '#2D3047',
                     padding: '5px 0',
                     display: 'flex',
@@ -56,7 +56,7 @@ export default function Features() {
                     gap: 10,
                     marginLeft: 10,
                   }}>
-                    <FaCheckCircle style={{ color: iconColor, fontSize: 28 }} /> {f.title}
+                    <FaCheckCircle style={{ color: iconColor, fontSize: 16 }} /> {f.title}
                   </li>
                 ))}
               </ul>
@@ -64,7 +64,7 @@ export default function Features() {
                 {features.slice(2).map((f) => (
                   <li key={f.title} style={{
                     fontFamily: "'Fredoka One', cursive",
-                    fontSize: 26,
+                    fontSize: 14,
                     color: '#2D3047',
                     padding: '5px 0',
                     display: 'flex',
@@ -72,7 +72,7 @@ export default function Features() {
                     gap: 10,
                     marginLeft: 10,
                   }}>
-                    <FaCheckCircle style={{ color: iconColor, fontSize: 28 }} /> {f.title}
+                    <FaCheckCircle style={{ color: iconColor, fontSize: 16 }} /> {f.title}
                   </li>
                 ))}
               </ul>
@@ -81,7 +81,7 @@ export default function Features() {
             <div style={{ paddingTop: 20 }}>
               <h2 style={{
                 fontFamily: "'Fredoka One', cursive",
-                fontSize: 30,
+                fontSize: 18,
                 color: '#2D3047',
               }}>
                 Have a question?{' '}
@@ -101,7 +101,7 @@ export default function Features() {
             {/* Floating icons */}
             <FaPlus className="desktop-only icon-rotate" style={{
               position: 'absolute', bottom: 300, right: -15,
-              color: '#7cefe9', fontSize: 48,
+              color: '#7cefe9', fontSize: 36,
             }} />
           </div>
         </div>

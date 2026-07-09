@@ -6,7 +6,7 @@ export default function ContactInfo() {
     <div>
       <h3 style={{
         fontFamily: "'Fredoka One', cursive",
-        fontSize: 34,
+        fontSize: 22,
         color: '#2D3047',
         marginBottom: 20,
       }}>
@@ -29,12 +29,12 @@ export default function ContactInfo() {
           justifyContent: 'center',
           flexShrink: 0,
         }}>
-          <FaMapMarkerAlt style={{ color: '#fff', fontSize: 30 }} />
+          <FaMapMarkerAlt style={{ color: '#fff', fontSize: 18 }} />
         </div>
         <div>
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 26,
+            fontSize: 14,
             color: '#696969',
             margin: 0,
           }}>
@@ -59,12 +59,12 @@ export default function ContactInfo() {
           justifyContent: 'center',
           flexShrink: 0,
         }}>
-          <FaPhone style={{ color: '#fff', fontSize: 30 }} />
+          <FaPhone style={{ color: '#fff', fontSize: 18 }} />
         </div>
         <div>
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 26,
+            fontSize: 14,
             color: '#696969',
             margin: 0,
           }}>
@@ -72,7 +72,7 @@ export default function ContactInfo() {
           </p>
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 26,
+            fontSize: 14,
             color: '#696969',
             margin: 0,
           }}>
@@ -96,12 +96,12 @@ export default function ContactInfo() {
           justifyContent: 'center',
           flexShrink: 0,
         }}>
-          <FaEnvelope style={{ color: '#fff', fontSize: 30 }} />
+          <FaEnvelope style={{ color: '#fff', fontSize: 18 }} />
         </div>
         <div>
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 26,
+            fontSize: 14,
             color: '#696969',
             margin: 0,
           }}>

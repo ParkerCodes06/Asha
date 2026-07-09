@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <h3 style={{
               fontFamily: "'Fredoka One', cursive",
-              fontSize: 34,
+              fontSize: 22,
               color: '#fff',
               marginBottom: 20,
             }}>
@@ -25,7 +25,7 @@ export default function Footer() {
             </h3>
             <p style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontSize: 26,
+              fontSize: 14,
               color: '#ccc',
               marginBottom: 15,
               display: 'flex',
@@ -37,7 +37,7 @@ export default function Footer() {
             </p>
             <p style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontSize: 26,
+              fontSize: 14,
               color: '#ccc',
               marginBottom: 15,
               display: 'flex',
@@ -49,7 +49,7 @@ export default function Footer() {
             </p>
             <p style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontSize: 26,
+              fontSize: 14,
               color: '#ccc',
               marginBottom: 20,
               display: 'flex',
@@ -75,7 +75,7 @@ export default function Footer() {
                   justifyContent: 'center',
                   transition: 'all 0.3s',
                   color: '#ccc',
-                  fontSize: 24,
+                  fontSize: 12,
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = '#1877F2';
@@ -104,7 +104,7 @@ export default function Footer() {
                   justifyContent: 'center',
                   transition: 'all 0.3s',
                   color: '#ccc',
-                  fontSize: 24,
+                  fontSize: 12,
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = '#25D366';
@@ -126,7 +126,7 @@ export default function Footer() {
           <div>
             <h3 style={{
               fontFamily: "'Fredoka One', cursive",
-              fontSize: 34,
+              fontSize: 22,
               color: '#fff',
               marginBottom: 20,
             }}>
@@ -139,7 +139,7 @@ export default function Footer() {
                     href={link.href}
                     style={{
                       fontFamily: "'Montserrat', sans-serif",
-                      fontSize: 26,
+                      fontSize: 14,
                       color: '#ccc',
                       textDecoration: 'none',
                       transition: 'color 0.3s',
@@ -158,7 +158,7 @@ export default function Footer() {
           <div>
             <h3 style={{
               fontFamily: "'Fredoka One', cursive",
-              fontSize: 34,
+              fontSize: 22,
               color: '#fff',
               marginBottom: 20,
             }}>
@@ -168,7 +168,7 @@ export default function Footer() {
               {footerPrograms.map((p) => (
                 <li key={p} style={{
                   fontFamily: "'Montserrat', sans-serif",
-                  fontSize: 26,
+                  fontSize: 14,
                   color: '#ccc',
                   marginBottom: 10,
                 }}>
@@ -195,7 +195,7 @@ export default function Footer() {
         }}>
           <p style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 26,
+            fontSize: 14,
             color: '#ccc',
             margin: 0,
           }}>
@@ -203,7 +203,7 @@ export default function Footer() {
           </p>
           <div style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: 22,
+            fontSize: 10,
             color: '#C8962E',
           }}>
             Made with <span style={{ color: '#E44993' }}>&#10084;</span> by{' '}

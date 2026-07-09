@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gloria+Hallelujah&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #C8962E;
+  --primary-rgb: 200, 150, 46;
+  --text: #2D3047;
+  --text-light: #696969;
+  --white: #ffffff;
+  --teal: #2196F3;
+  --teal-light: #7CCFEF;
+  --blue: #2196F3;
+  --green: #4CAF50;
+  --yellow: #FFC107;
+  --pink: #E44993;
+  --gold: #C8962E;
+  --navy: #2D3047;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ===== WATERMARK LOGO BACKGROUND ===== */
+.watermark-bg {
+  position: relative;
+}
+
+.watermark-bg::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background-image: url('/images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== KEYFRAME ANIMATIONS ===== */
+@keyframes rotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes grow {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1.2); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes move {
+  0% { margin-left: 0; }
+  100% { margin-left: 5px; }
+}
+
+@keyframes ring {
+  0% { transform: rotate(340deg); }
+  10% { transform: rotate(350deg) scale(1.1); }
+  20% { transform: rotate(330deg) scale(1.1); }
+  30% { transform: rotate(350deg); }
+  40% { transform: rotate(335deg); }
+  50% { transform: rotate(345deg) scale(1.05); }
+  60% { transform: rotate(338deg); }
+  70% { transform: rotate(342deg); }
+  80% { transform: rotate(340deg) scale(1.02); }
+  90% { transform: rotate(340deg); }
+  100% { transform: rotate(340deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.phone-link:hover .phone-icon {
+  animation: ring 0.6s ease-in-out;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--primary) 0%, #e0b84d 100%);
+  color: var(--white);
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  padding: 14px 35px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a1c2e 100%);
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200,150,46,0.4);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--white);
+  color: var(--primary);
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  padding: 14px 35px;
+  border-radius: 25px;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(200,150,46,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-secondary:hover::before {
+  left: 100%;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, #e0b84d 100%);
+  color: var(--white);
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200,150,46,0.4);
+}
+
+/* ===== DECORATIVE ICONS ===== */
+.icon-rotate {
+  animation: rotation 5s infinite linear;
+}
+
+.icon-bounce {
+  animation: bounce 1s infinite alternate;
+}
+
+.icon-grow {
+  animation: grow 1s infinite alternate;
+}
+
+/* ===== TEACHER HOVER EFFECT ===== */
+.teacher-card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+}
+
+.teacher-card .teacher-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.teacher-card .teacher-details {
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.teacher-card:hover .teacher-details {
+  transform: translateY(0);
+}
+
+/* ===== SECTION REVEAL ANIMATION ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== CARD HOVER EFFECTS ===== */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ===== GRADIENT TEXT ===== */
+.gradient-text {
+  background: linear-gradient(135deg, var(--gold), var(--blue), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== FLOATING PARTICLES ===== */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only { display: none !important; }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  h1 { font-size: 36px !important; }
+  h2 { font-size: 28px !important; }
+  h3 { font-size: 22px !important; }
+
+  .btn-primary, .btn-secondary {
+    font-size: 22px;
+    padding: 12px 25px;
+  }
+
+  section {
+    padding: 40px 0 !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 28px !important; }
+  h2 { font-size: 22px !important; }
+
+  .btn-primary, .btn-secondary {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}

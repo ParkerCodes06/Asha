@@ -86,19 +86,12 @@ export const classCourses: Course[] = [
 ];
 
 export const team: TeamMember[] = [
-  { name: 'Khosi Majola', role: 'Craft Work, Life Skills, Computer Skills', description: 'Craft Work, Life Skills, Computer Skills', email: 'Khosi@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80' },
-  { name: 'Phyllis Munetsi', role: 'Play, Verbal Training, Health', description: 'Play, Verbal Training, Health', email: 'Phyllis@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=200&q=80' },
-  { name: 'Londiwe Mbuqe', role: 'Morning Ring, Creative Activities, Music & Life Skills', description: 'Morning Ring, Creative Activities, Music & Life Skills', email: 'Londiwe@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1592621385612-c4d22c9de4f4?w=200&q=80' },
-  { name: 'Busisiwe Jerminah Majola', role: 'Pre-School Principal', description: 'Pre-School Principal', email: 'Busisiwe@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&q=80' },
   { name: 'Kamogelo', role: 'Morning Ring, Creative Activities, Music & Life Skills', description: 'Morning Ring, Creative Activities, Music & Life Skills', email: 'Kamogelo@pulsetkids.co.za', image: '/images/teacher1.png' },
   { name: 'Parker', role: 'Play, Verbal Training, Health', description: 'Play, Verbal Training, Health', email: 'Parker@pulsetkids.co.za', image: '/images/teacher2.png' },
   { name: 'Sphesihle', role: 'Craft Work, Life Skills, Computer Skills', description: 'Craft Work, Life Skills, Computer Skills', email: 'Sphesihle@pulsetkids.co.za', image: '/images/teacher3.png' },
 ];
 
 export const aboutTeam: TeamMember[] = [
-  { name: 'Khosi Majola', role: 'Craft Work, Life Skills', description: 'Craft Work, Life Skills', email: 'Khosi@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80' },
-  { name: 'Londiwe Mbuqe', role: 'Health, Computer & Life Skills', description: 'Health, Computer & Life Skills', email: 'Londiwe@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1592621385612-c4d22c9de4f4?w=200&q=80' },
-  { name: 'Busisiwe Jerminah Majola', role: 'School Principal', description: 'School Principal', email: 'Busisiwe@pulsetkids.co.za', image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&q=80' },
   { name: 'Kamogelo', role: 'Morning Ring, Creative Activities, Music & Life Skills', description: 'Morning Ring, Creative Activities, Music & Life Skills', email: 'Kamogelo@pulsetkids.co.za', image: '/images/teacher1.png' },
   { name: 'Parker', role: 'Play, Verbal Training, Health', description: 'Play, Verbal Training, Health', email: 'Parker@pulsetkids.co.za', image: '/images/teacher2.png' },
   { name: 'Sphesihle', role: 'Craft Work, Life Skills, Computer Skills', description: 'Craft Work, Life Skills, Computer Skills', email: 'Sphesihle@pulsetkids.co.za', image: '/images/teacher3.png' },

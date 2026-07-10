@@ -7,10 +7,10 @@
     <title>Pulset Kids Academy – Adding Joy to Everyday</title>
     <script>
       (function() {
+        if (window.location.pathname.startsWith('/mobile/')) return;
         var isMobile = /Android|iPhone|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (isMobile || window.innerWidth < 768) {
-          var dest = 'https://m.pulset.co.za' + window.location.pathname;
-          window.location.replace(dest);
+          window.location.replace('/mobile/');
         }
       })();
     </script>

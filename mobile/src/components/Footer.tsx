@@ -70,7 +70,7 @@ export default function Footer() {
           </p>
           <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 11, color: '#C8962E', marginTop: 8 }}>
             <a
-              href="https://pulset.co.za"
+              href="/"
               style={{ color: '#C8962E', textDecoration: 'underline' }}
             >
               View Desktop Site

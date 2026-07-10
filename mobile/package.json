@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "if not exist public\\images mkdir public\\images && xcopy ..\\public\\images public\\images /E /I /Y",
+    "prebuild": "mkdir -p public/images && cp -r ../public/images/* public/images/",
     "build": "npm run prebuild && tsc -b && vite build",
     "preview": "vite preview"
   },

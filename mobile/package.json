@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "mkdir -p public/images && cp -r ../public/images/* public/images/",
+    "prebuild": "node -e \"import('fs').then(f=>{f.mkdirSync('public/images',{recursive:true});f.cpSync('../public/images','public/images',{recursive:true})})\"",
     "build": "npm run prebuild && tsc -b && vite build",
     "preview": "vite preview"
   },

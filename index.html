@@ -5,6 +5,15 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=1000, initial-scale=1, shrink-to-fit=no" />
     <title>Pulset Kids Academy – Adding Joy to Everyday</title>
+    <script>
+      (function() {
+        var isMobile = /Android|iPhone|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile || window.innerWidth < 768) {
+          var dest = 'https://m.pulset.co.za' + window.location.pathname;
+          window.location.replace(dest);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

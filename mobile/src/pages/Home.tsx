@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import Hero from '../components/Hero';
+import StatsCounter from '../components/StatsCounter';
 import Features from '../components/Features';
+import WaveDivider from '../components/WaveDivider';
 import Courses from '../components/Courses';
 import Gallery from '../components/Gallery';
 import WhyChoose from '../components/WhyChoose';
 import Team from '../components/Team';
+import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
 import Blog from '../components/Blog';
 import Newsletter from '../components/Newsletter';
@@ -35,7 +38,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <StatsCounter />
+      <WaveDivider fillTop="#2D3047" fillBottom="#ffffff" />
       <Features />
+      <WaveDivider fillTop="#ffffff" fillBottom="#fafafa" />
       <Courses
         courses={courses}
         subtitle="Our Distinguished Programmes"
@@ -43,15 +49,20 @@ export default function Home() {
         highlight="Experiences"
         viewAll
       />
+      <WaveDivider fillTop="#fafafa" fillBottom="#ffffff" />
       <Gallery onImageClick={openLightbox} />
+      <WaveDivider fillTop="#ffffff" fillBottom="#ffffff" />
       <WhyChoose />
+      <WaveDivider fillTop="#ffffff" fillBottom="#ffffff" />
       <Team
         members={team}
         subtitle="Meet Our Visionaries"
         title="The Minds Behind "
         highlight="Your Child's Journey"
       />
+      <Testimonials />
       <CTA />
+      <WaveDivider fillTop="#2D3047" fillBottom="#ffffff" />
       <Blog />
       <Newsletter />
       <Lightbox

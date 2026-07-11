@@ -18,7 +18,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
   return (
     <div
       ref={ref}
-      className={`card-tap ${isVisible ? 'animate-fade-in-up' : ''}`}
+      className={`card-tap card-tilt ${isVisible ? 'animate-fade-in-up' : ''}`}
       style={{
         background: '#fff',
         borderRadius: 16,
@@ -28,7 +28,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
         transitionDelay: `${index * 120}ms`,
       }}
     >
-      <div style={{ height: 180, overflow: 'hidden', position: 'relative' }}>
+      <div className="card-shimmer" style={{ height: 180, overflow: 'hidden', position: 'relative' }}>
         {!imgLoaded && (
           <div className="skeleton" style={{ position: 'absolute', inset: 0 }} />
         )}
@@ -55,6 +55,7 @@ function CourseCard({ course, index }: { course: Course; index: number }) {
           fontSize: 11,
           fontWeight: 600,
           boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+          animation: 'glowRing 2s ease-out infinite',
         }}>
           {course.badge}
         </span>

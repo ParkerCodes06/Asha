@@ -8,6 +8,7 @@ import Classes from './pages/Classes';
 import Contact from './pages/Contact';
 import ScrollProgress from './components/ScrollProgress';
 import OfflineBanner from './components/OfflineBanner';
+import BackToTop from './components/BackToTop';
 import { ToastProvider } from './components/Toast';
 import PageTransition from './components/PageTransition';
 
@@ -37,6 +38,7 @@ function AppContent() {
         </PageTransition>
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

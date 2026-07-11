@@ -1,16 +1,99 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import Skeleton from './Skeleton';
+
+function LetterByLetter({ text, className }: { text: string; className?: string }) {
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setRevealed(true), 400);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <span style={{ display: 'inline-block' }}>
+      {text.split('').map((char, i) => (
+        <span
+          key={i}
+          className={className}
+          style={{
+            display: 'inline-block',
+            opacity: revealed ? 1 : 0,
+            animation: revealed ? `letterReveal 0.5s ease-out ${i * 80}ms forwards` : 'none',
+            transformOrigin: 'bottom center',
+          }}
+        >
+          {char === ' ' ? '\u00A0' : char}
+        </span>
+      ))}
+    </span>
+  );
+}
 
 export default function Hero() {
   const [imgLoaded, setImgLoaded] = useState(false);
   const { ref: sectionRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
 
   return (
-    <section ref={sectionRef} style={{ padding: '24px 0 0', overflow: 'hidden' }}>
+    <section
+      ref={sectionRef}
+      style={{
+        padding: '24px 0 0',
+        overflow: 'hidden',
+        position: 'relative',
+        background: 'linear-gradient(180deg, rgba(200,150,46,0.03) 0%, rgba(255,255,255,0) 100%)',
+      }}
+    >
+      {/* Floating decorative shapes */}
+      <div
+        className="float-shape float-shape-1"
+        style={{
+          top: 20,
+          right: 10,
+          width: 60,
+          height: 60,
+          opacity: 0.08,
+        }}
+      >
+        <svg viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="30" fill="#C8962E" />
+          <circle cx="30" cy="30" r="20" fill="none" stroke="#C8962E" strokeWidth="2" />
+        </svg>
+      </div>
+
+      <div
+        className="float-shape float-shape-2"
+        style={{
+          top: 80,
+          left: 5,
+          width: 40,
+          height: 40,
+          opacity: 0.06,
+        }}
+      >
+        <svg viewBox="0 0 40 40" fill="none">
+          <polygon points="20,2 38,38 2,38" fill="#4CAF50" />
+        </svg>
+      </div>
+
+      <div
+        className="float-shape float-shape-3"
+        style={{
+          bottom: 30,
+          right: 20,
+          width: 50,
+          height: 50,
+          opacity: 0.07,
+        }}
+      >
+        <svg viewBox="0 0 50 50" fill="none">
+          <rect x="5" y="5" width="40" height="40" rx="8" fill="#2196F3" />
+        </svg>
+      </div>
+
       <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: 24 }}>
+        <div style={{ textAlign: 'center', marginBottom: 24, position: 'relative', zIndex: 1 }}>
           <p
             className={isVisible ? 'animate-fade-in-up delay-0' : ''}
             style={{
@@ -24,16 +107,16 @@ export default function Hero() {
             Adding Joy to Everyday
           </p>
           <h1
-            className={isVisible ? 'animate-fade-in-up delay-1' : ''}
             style={{
               fontFamily: "'Fredoka One', cursive",
               fontSize: 36,
               color: '#C8962E',
               lineHeight: 1.1,
               opacity: isVisible ? undefined : 0,
+              minHeight: 44,
             }}
           >
-            Professional
+            {isVisible ? <LetterByLetter text="Professional" /> : 'Professional'}
           </h1>
           <p
             className={isVisible ? 'animate-fade-in-up delay-2' : ''}
@@ -58,7 +141,12 @@ export default function Hero() {
             <Link
               to="/about"
               className="btn-primary btn-ripple"
-              style={{ textDecoration: 'none', maxWidth: 280, margin: '0 auto' }}
+              style={{
+                textDecoration: 'none',
+                maxWidth: 280,
+                margin: '0 auto',
+                animation: 'glowPulse 3s ease-in-out infinite',
+              }}
             >
               Get Started
             </Link>
@@ -67,7 +155,7 @@ export default function Hero() {
 
         <div
           className={isVisible ? 'animate-fade-in-up delay-4' : ''}
-          style={{ textAlign: 'center', opacity: isVisible ? undefined : 0 }}
+          style={{ textAlign: 'center', opacity: isVisible ? undefined : 0, position: 'relative', zIndex: 1 }}
         >
           {!imgLoaded && <Skeleton type="image" />}
           <img

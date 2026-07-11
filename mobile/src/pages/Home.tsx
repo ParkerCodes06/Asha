@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Hero from '../components/Hero';
-import StatsCounter from '../components/StatsCounter';
 import Features from '../components/Features';
 import WaveDivider from '../components/WaveDivider';
 import Courses from '../components/Courses';
@@ -38,8 +37,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <StatsCounter />
-      <WaveDivider fillTop="#2D3047" fillBottom="#ffffff" />
       <Features />
       <WaveDivider fillTop="#ffffff" fillBottom="#fafafa" />
       <Courses
